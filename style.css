@@ -1,0 +1,186 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.hero-wrapper {
+  background: linear-gradient(to bottom, #eda418 47%, #fad783 100%);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: black;
+}
+.logo-icon {
+  position: relative;
+  display: inline-block;
+}
+.logo-icon img {
+  display: block;
+}
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+nav a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+nav a:hover {
+  color: #7a5c00;
+}
+nav a.active {
+  font-weight: bold;
+}
+
+.cart img {
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+.cart img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 600px;
+  gap: 20px;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  max-width: 50%;
+}
+.hero-title {
+  margin-bottom: 29px;
+}
+.hero-image {
+  width: 50%;
+}
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-btn {
+  background-color: #eb3b3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #d22f2f;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+h2 {
+  text-align: center;
+}
+.menu-grid {
+  display: grid; /* превращаем в grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  gap: 40px 20px; /* расстояние между карточками */
+}
+.menu-card {
+  background-color: white;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.menu-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.menu-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+.menu-card p {
+  margin: 12px 16px 16 px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+footer {
+  padding: 40px 20px;
+  background: linear-gradient(to top, #f9a825, #fff3e0);
+  text-align: center;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.footer-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.8;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+}
